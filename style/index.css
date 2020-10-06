@@ -1,8 +1,6 @@
 /* Add CSS styling here */
 * {
-    box-sizing: border-box;
     max-width: 100%;
-   /* border: 1px solid gray; */
 }
 
 /*colors to use:
@@ -210,5 +208,38 @@ button a {
     color: #1F2833;
 }
 
+.page-split {
+    width: 100%;
+}
 
+@media(max-width:800px){
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gcontainer1 video, img {
+        width: 20%;
+    }
+}
+
+@media(max-width:500px) {
+    .gcontainer2 {
+        width: 90%;
+    }
+
+    .gcontainer1 video, img {
+        width: 20%;
+    }
+
+    .gallery {
+        display: flex;
+        align-items: center;
+    }
+
+    .headyimage {
+        height: 30vh;
+    }
+}
 
